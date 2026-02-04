@@ -76,6 +76,7 @@ For example, calling `createPlatform(500, 300, 200, 20);` means:
 These numbers are **arguments** passed to the function, matching the **parameters** defined in the function.
 
 <!-- 4 line breaks between TODOs -->
+
 <br><br><br><br>
 
 # Lesson Steps
@@ -94,7 +95,6 @@ These numbers are **arguments** passed to the function, matching the **parameter
    - Click on the `platformer` folder 📂 located within the `fsd-projects` folder.
    - Click on the `platformer.js` file. Coding for all steps will be done in this file.
 2. **Follow the instructions carefully** for each TODO:
-
    - Pay attention to where new code should be added.
    - Only code inside the designated areas
      - Make sure all function calls go between the _`ONLY CHANGE BELOW THIS POINT`_ and _`ONLY CHANGE ABOVE THIS POINT`_ comments.
@@ -127,6 +127,7 @@ These numbers are **arguments** passed to the function, matching the **parameter
 - If you encounter issues, **preview your site** using Live Server to troubleshoot.
 
 <!-- 4 line breaks between TODOs -->
+
 <br><br><br><br>
 
 ## **TODO 0: Preview Your Site with Live Server**
@@ -159,6 +160,7 @@ There are two ways to open your project with **Live Server**:
   - Then navigate to your Platformer project by clicking the Platformer link.
 
 <!-- 4 line breaks between TODOs -->
+
 <br><br><br><br>
 
 ## **TODO 1: Enable the Grid**
@@ -170,12 +172,10 @@ There are two ways to open your project with **Live Server**:
 ### Step-by-Step Instructions
 
 1. **Uncomment the `toggleGrid` function**
-
    - **Find the `toggleGrid()` line in your JavaScript file**. You’ll see it has `//` at the beginning, making it inactive.
    - Remove `//` to enable the grid in your game.
 
 2. **Check your game in Live Server**
-
    - Refresh your game to see a grid appear on the screen, marking x and y positions every 100 pixels.
    - This grid is optional but can be very helpful in placing game items more precisely.
 
@@ -208,6 +208,7 @@ There are two ways to open your project with **Live Server**:
 - Experiment with adding and removing the grid to see how it affects your ability to place items.
 
 <!-- 4 line breaks between TODOs -->
+
 <br><br><br><br>
 
 ## **TODO 2:** Add _Platforms_
@@ -219,7 +220,6 @@ There are two ways to open your project with **Live Server**:
 ### Step-by-Step Instructions
 
 1. 🔍 **Locate the section in your code** where you can add platforms.
-
    - Add your code below the comment that says `// TODO 2 - Create Platforms`
    - You’ll be using the `createPlatform` function to set the position and size of each platform.
 
@@ -229,13 +229,13 @@ There are two ways to open your project with **Live Server**:
 
    <div style="width: 80%; margin: auto;">
 
-| Argument | Description                                                             | Example Value        |
-| -------- | ----------------------------------------------------------------------- | -------------------- |
-| `x`      | x-coordinate of the platform                                            | `500`                |
-| `y`      | y-coordinate of the platform                                            | `300`                |
-| `width`  | Width of the platform in pixels                                         | `200`                |
-| `height` | Height of the platform in pixels                                        | `20`                 |
-| `color`  | (Optional) Color of the platform; will default to grey if not specified | `"hotpink"`          |
+| Argument | Description                                                             | Example Value |
+| -------- | ----------------------------------------------------------------------- | ------------- |
+| `x`      | x-coordinate of the platform                                            | `500`         |
+| `y`      | y-coordinate of the platform                                            | `300`         |
+| `width`  | Width of the platform in pixels                                         | `200`         |
+| `height` | Height of the platform in pixels                                        | `20`          |
+| `color`  | (Optional) Color of the platform; will default to grey if not specified | `"hotpink"`   |
 
    </div>
 
@@ -256,7 +256,7 @@ createPlatform(1350, 400, 50, 50, "red");
 
 ### 🎨 Tip: Use Color to Track Your Progress!
 
-As you're adding and positioning platforms, it can be really helpful to change their colors *after* they're in the right place.
+As you're adding and positioning platforms, it can be really helpful to change their colors _after_ they're in the right place.
 
 This way, you can quickly spot which platforms are already finished and which ones you're still working on. It's a great habit for staying organized while building.
 
@@ -295,6 +295,7 @@ createPlatform(100, 20, 10, 10, "lime"); // bright green for a finished platform
 - Make sure you have at least 5 platforms placed at different heights and positions.
 
 <!-- 4 line breaks between TODOs -->
+
 <br><br><br><br>
 
 ## **TODO 3:** Add _Collectables_
@@ -306,11 +307,9 @@ createPlatform(100, 20, 10, 10, "lime"); // bright green for a finished platform
 ### Step-by-Step Instructions
 
 1. 🔍 **Locate the section in your code** designated for adding collectables.
-
    - Use the `createCollectable` function to add items at specific locations on the screen.
 
 2. **Understand the Arguments for `createCollectable`**
-
    - The `createCollectable` function requires arguments that control the item’s type and position.
    - Refer to the table below for details:
 
@@ -318,7 +317,7 @@ createPlatform(100, 20, 10, 10, "lime"); // bright green for a finished platform
 
    | Argument  | Description                                                             | Example Value |
    | --------- | ----------------------------------------------------------------------- | ------------- |
-   | `type`    | The type of collectable (e.g., "database", "diamond")                          | `"diamond"`      |
+   | `type`    | The type of collectable (e.g., "database", "diamond")                   | `"diamond"`   |
    | `x`       | x-coordinate of the collectable                                         | `200`         |
    | `y`       | y-coordinate of the collectable                                         | `170`         |
    | `gravity` | (Optional) Controls how the item falls; set to `0` if it shouldn’t fall | `0.5`         |
@@ -328,7 +327,7 @@ createPlatform(100, 20, 10, 10, "lime"); // bright green for a finished platform
 
    **Important**: You can use any of the following values for your `type`: `"database"`, `"diamond"`, `"grace"`, `"kennedi"`, `"max"`, and `"steve"`
 
-   ---
+   ***
 
    Example function calls:
 
@@ -367,6 +366,7 @@ createPlatform(100, 20, 10, 10, "lime"); // bright green for a finished platform
 - Make sure you have at least 3 collectables, with different types if possible.
 
 <!-- 4 line breaks between TODOs -->
+
 <br><br><br><br>
 
 ## **TODO 4:** Add _Cannons_
@@ -378,11 +378,9 @@ createPlatform(100, 20, 10, 10, "lime"); // bright green for a finished platform
 ### Step-by-Step Instructions
 
 1. 🔍 **Locate the section in your code** for adding cannons.
-
    - Use the `createCannon` function to place each cannon along the screen edges.
 
 2. **Understand the Arguments for `createCannon`**
-
    - The `createCannon` function has arguments for placement and firing speed. Review the table for details:
 
    <div style="width: 80%; margin: auto;">
@@ -396,9 +394,8 @@ createPlatform(100, 20, 10, 10, "lime"); // bright green for a finished platform
    </div>
 
    **Important**: You can use any of the following string values for your `side`: `"top"`, `"bottom"`, `"left"`, or `"right"`
-   
-  
-   --- 
+
+   ***
 
    Example function calls:
 
@@ -436,6 +433,7 @@ createPlatform(100, 20, 10, 10, "lime"); // bright green for a finished platform
 - Ensure you have at least 3 cannons placed on different sides with varying delay intervals.
 
 <!-- 4 line breaks between TODOs -->
+
 <br><br><br><br>
 
 ## **TODO 5:** _Make your level challenging!_
@@ -447,6 +445,7 @@ Make sure your game unique and challenging! In order to get full credit your pro
 - Cannons are placed to create a challenge.
 
 <!-- 4 line breaks between TODOs -->
+
 <br><br><br><br>
 
 ## Explore Bonus Challenges
@@ -456,9 +455,10 @@ We've compiled a list of optional **bonus challenges** for you to take this proj
 - Access them on [GitHub here](https://github.com/OperationSpark/platformer-neo/blob/master/BONUS_CHALLENGES.md)
 
 <!-- 4 line breaks between TODOs -->
+
 <br><br><br><br>
 
-## **TODO 6:** *Go Live*
+## **TODO 6:** _Go Live_
 
 🎯 **Goal:** Push your changes to GitHub and make your platformer game go live.
 
@@ -475,11 +475,11 @@ We've compiled a list of optional **bonus challenges** for you to take this proj
 
 3. **Run the required git commands one by one** in the terminal, pressing enter after each command to run it. Reference the table and comment below for how to run the three commands:
 
-| Command              | Purpose                                                      |
-|----------------------|--------------------------------------------------------------|
-| `git add .`          | Stages all your changes so Git is aware of them.             |
-| `git commit -m "Finalized platformer game"`      | Saves a version of your work with a brief message.           |
-| `git push`           | Uploads your committed changes to GitHub, making them live.  |
+| Command                                     | Purpose                                                     |
+| ------------------------------------------- | ----------------------------------------------------------- |
+| `git add .`                                 | Stages all your changes so Git is aware of them.            |
+| `git commit -m "Finalized platformer game"` | Saves a version of your work with a brief message.          |
+| `git push`                                  | Uploads your committed changes to GitHub, making them live. |
 
 <br>
 
